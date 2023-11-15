@@ -1,110 +1,105 @@
-const menu = ['Rice', 'Noodles'];
-const name = "Suzy";
-
-export {menu, name};
-
-const girlgroups = [
+const girl = [
     {
         group:"BLACKPINK",
-        img:"./public/blackpink.jpg",
+        img:"./blackpink.jpg",
         price:"$64.99",
     },
     {
         group:"IVE",
-        img:"./public/ive.png",
+        img:"./ive.png",
         price:"$54.99",
     },
     {
         group:"LE SSERAFIM",
-        img:"./public/LESSIRAFIM.png",
+        img:"./LESSIRAFIM.png",
         price:"$79.99",
     },
     {
         group:"NEWJEANS ",
-        img:"./public/newjeans.png",
+        img:"./newjeans.png",
         price:" $69.99",
     },
     {
         group:"KEP1LER",
-        img:"./public/kep1ler.png",
+        img:"./kep1ler.png",
         price:"$59.99",
     },
     {
         group:"AESPA",
-        img:"./public/aespa.png",
+        img:"./aespa.png",
         price:" $59.99",
     },
     {
         group:"(G)I-DLE",
-        img:"./public/gilde.png",
+        img:"./gilde.png",
         price:"$59.99",
     },
     {
         group:"LOONA",
-        img:"./public/loona.png",
+        img:"./loona.png",
         price:"$64.99",
     },
     {
         group:"STAYC",
-        img:"./public/stayc.png",
+        img:"./stayc.png",
         price:"$69.99",
     },
     {
         group:"WEKI MEKI",
-        img:"./public/WEKI-MEKI.png",
+        img:"./WEKI-MEKI.png",
         price:"$55.99",
     },
 ]
-
-const boygroups = [
+const boy = [
     {
         group:"SEVENTEEN",
-        img:"./public/seventeen.png",
+        img:"./seventeen.png",
         price:"$69.99",
     },
     {
         group:"ATEEZ",
-        img:"./public/ateez.png",
+        img:"./ateez.png",
         price:"$59.99",
     },
     {
-        group:"",
-        img:"",
-        price:"",
+        group:"STRAY KIDS",
+        img:"./straykids.jpg",
+        price:"$62.99",
     },
     {
-        group:"",
-        img:"",
-        price:"",
+        group:"THE BOYZ",
+        img:"./theboyz.png",
+        price:"$59.99",
     },
     {
-        group:"",
-        img:"",
-        price:"",
+        group:"ENHYPEN",
+        img:"./enhypen.png",
+        price:"$69.99",
     },
     {
-        group:"",
-        img:"",
-        price:"",
+        group:"TREASURE",
+        img:"./treasure.png",
+        price:"$53.99",
     },
     {
-        group:"",
-        img:"",
-        price:"",
+        group:"ZEROBASEONE",
+        img:"./zb1.png",
+        price:"$65.99",
     },
     {
-        group:"",
-        img:"",
-        price:"",
+        group:"GOT7",
+        img:"./got7.png",
+        price:"$59.99",
     },
     {
-        group:"",
-        img:"",
-        price:"",
+        group:"CRAVITY",
+        img:"./cravity.png",
+        price:"$57.99",
     },
     {
-        group:"",
-        img:"",
-        price:"",
+        group:"MONSTA X",
+        img:"./monsta-x.png",
+        price:"$59.99",
     },
-]
+];
+export {girl, boy};

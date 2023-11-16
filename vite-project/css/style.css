@@ -1,6 +1,25 @@
+.container {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 3rem;
+}
+
+.gallery {
+  background-color: #ffc1e0;
+  padding: 50px;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+img {
+  max-width: 300px;
+  max-height: 300px;
+}
+
 :root {
-  --blue:#2998ff;
-  --orange: #ff7730;
+  --blue:#798a99;
+  --orange: #fa8181;
   --primary: var(--orange);
   --h1: 5rem;
 }

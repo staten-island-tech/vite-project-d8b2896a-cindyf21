@@ -7,14 +7,33 @@
 
 .gallery {
   background-color: #ffc1e0;
-  padding: 50px;
+  padding: 40px;
   margin-top: 3rem;
   text-align: center;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5rem;
+}
+
+button {
+  width: 15rem;
+  height: 3rem;
+  background-color: white;
 }
 
 img {
   max-width: 300px;
   max-height: 300px;
+  margin: 1.1rem;
 }
 
 

@@ -1,5 +1,5 @@
 import '../css/style.css'
-import {girl, boy} from "./menu.js";
+import {kpop} from "./menu.js";
 
 function card(el) {
     document.querySelector(".container").insertAdjacentHTML(
@@ -11,7 +11,7 @@ function card(el) {
         </div>`
         )
     }
-girl.forEach(el => card(el));
-boy.forEach(el => card(el));
+kpop.forEach(el => card(el));
+
 
 

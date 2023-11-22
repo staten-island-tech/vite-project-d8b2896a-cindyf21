@@ -6,7 +6,7 @@
 }
 
 .gallery {
-  background-color: #ffc1e0;
+  background-color: #ffc1d1;
   padding: 40px;
   margin-top: 3rem;
   text-align: center;
@@ -40,7 +40,7 @@ img {
 
 :root {
   --blue:#798a99;
-  --orange: #fa8181;
+  --orange: #ff9a9a;
   --primary: var(--orange);
   --h1: 5rem;
 }

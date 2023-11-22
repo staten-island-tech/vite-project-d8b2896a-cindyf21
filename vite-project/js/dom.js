@@ -9,13 +9,15 @@ const DOMSelectors = {
 };
 
 DOMSelectors.girlgroup.addEventListener("click", function (event) {
-    event.preventDefault();
+  event.preventDefault();
+  girlgroup();
    
 });
 
 function girlgroup() {
-const girl = kpop.filter((el) => el.bg === "Girl Group");
-girl.forEach((el) => {
-    console.log(`${el.group}`)
-})
+  const girl = kpop.filter((el) => el.bg.includes("Girl Group"))
+  console.log(girl)
+  kpop.push
 };
+
+

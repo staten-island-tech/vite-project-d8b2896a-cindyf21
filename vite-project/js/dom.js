@@ -8,16 +8,4 @@ const DOMSelectors = {
   fourthgen: document.getElementById("fourthgen"),
 };
 
-DOMSelectors.girlgroup.addEventListener("click", function (event) {
-  event.preventDefault();
-  girlgroup();
-   
-});
-
-function girlgroup() {
-  const girl = kpop.filter((el) => el.bg.includes("Girl Group"))
-  console.log(girl)
-  kpop.push
-};
-
 

@@ -1,7 +1,7 @@
 import '../css/style.css'
 import {kpop} from "./menu.js";
 
-function card(el) {
+function card(arr) {
     document.querySelector(".container").insertAdjacentHTML(
         'beforeend',
         `<div class="gallery"> 
@@ -11,7 +11,16 @@ function card(el) {
         </div>`
         )
     }
-kpop.forEach(el => card(el));
+card(arr);
 
-
-
+DOMSelectors.girlgroup.addEventListener("click", function (event) {
+    clearfields();
+    const girl = kpop.filter((el) => el.bg.includes("Girl Group"))
+    girlgroup(girl);
+});
+  
+function girlgroup() {
+    const girl = kpop.filter((el) => el.bg.includes("Girl Group"))
+    console.log(girl)
+};
+  

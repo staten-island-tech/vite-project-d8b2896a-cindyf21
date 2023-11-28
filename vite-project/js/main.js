@@ -1,26 +1,13 @@
-import '../css/style.css'
-import {kpop} from "./menu.js";
+import "../css/style.css";
+import "./dom.js";
 
-function card(arr) {
-    document.querySelector(".container").insertAdjacentHTML(
-        'beforeend',
-        `<div class="gallery"> 
-        <h2 class="cardname"> ${el.group} </h2>  
-        <img class="image" src="${el.img}" alt""></img> 
-        <h3 class="price"> ${el.price} </h3> 
-        </div>`
-        )
+document.getElementById("theme").addEventListener("click", function () {
+    if (document.body.classList.contains("light")) {
+        document.body.classList.add("dark");
+        document.body.classList.remove("light");
     }
-card(arr);
-
-DOMSelectors.girlgroup.addEventListener("click", function (event) {
-    clearfields();
-    const girl = kpop.filter((el) => el.bg.includes("Girl Group"))
-    girlgroup(girl);
+    else {
+        document.body.classList.add("light");
+        document.body.classList.remove("dark");
+    }
 });
-  
-function girlgroup() {
-    const girl = kpop.filter((el) => el.bg.includes("Girl Group"))
-    console.log(girl)
-};
-  

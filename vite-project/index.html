@@ -6,21 +6,32 @@
     <title> Bon Appe-Vite </title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="dark">
     <h1 class="title"> LIGHTSTICKS </h1>
 
-    <div class="filter">
-        <button id="girlgroup"> GIRL GROUPS </button>
-        <button id="boygroup"> BOY GROUPS </button>
-        <button id="thirdgen"> 3RD GENERATION </button>
-        <button id="fourthgen"> 4TH GENERATION </button>
+    <div class="main">
+        <button id="theme"> Light/Dark </button>
+
+        <div class="grouptype">
+            <h4 class="filter" id="groupFilter"> Groups: </h4>
+            <button id="groupbtn"> GIRL GROUPS </button>
+            <button id="groupbtn"> BOY GROUPS </button>
+
+        </div>
+        <div class="generation">
+            <h4 class="filter" id="genFilter"> Generations: </h4>
+            <button id="thirdgen"> 3RD GENERATION </button>
+            <button id="fourthgen"> 4TH GENERATION </button>
+        </div>
+        <div class="all">
+            <button class="allbtn" id="fullMenu">Reset to Full-Menu</button>
+        </div>
+            <div id="output"></div>
+        </div>
+
     </div>
-    
-
-
 
     <div class="container"></div>
-   
     
     <script type="module" src="./js/main.js"></script>
     <script type="module" src="./js/dom.js"></script>

@@ -1,4 +1,4 @@
-const kpop = [
+const menu = [
     {
         group:"BLACKPINK",
         img:"./blackpink.jpg",
@@ -160,4 +160,4 @@ const kpop = [
         company:"Starship",
     },
 ]
-export {kpop};
+export {menu};

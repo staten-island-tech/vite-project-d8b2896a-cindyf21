@@ -9,28 +9,25 @@
 <body class="dark">
     <h1 class="title"> LIGHTSTICKS </h1>
 
-    <div class="main">
-        <button id="theme"> Light/Dark </button>
 
-        <div class="grouptype">
-            <h4 class="filter" id="groupFilter"> Groups: </h4>
-            <button class="groupbtn" id="girlgroup"> Girl Groups </button>
-            <button class="groupbtn" id="boygroup"> Boy Groups  </button>
+    <div class="groupFilter">
+        <button class="button" id="girlgroup"> Girl Groups </button>
+        <button class="button" id="boygroup"> Boy Groups  </button>
+    </div>
+    <div class="genFilter">
+        <button class="button" id="thirdgen"> 3rd Generation </button>
+        <button class="button" id="fourthgen"> 4th Generation </button>
+    </div>
 
-        </div>
-        <div class="generation">
-            <h4 class="filter" id="genFilter"> Generations: </h4>
-            <button class="genbtn" id="thirdgen"> 3rd Generation </button>
-            <button class="genbtn" id="fourthgen"> 4th Generation </button>
-        </div>
-        <div class="all">
-            <button class="allbtn" id="fullMenu"> Reset </button>
-        </div>
-            <div id="output"></div>
-        </div>
-
+    <div>
+        <button id="reset"> Reset </button>
+        <button id="theme"> Theme </button>
     </div>
     
+
+
+    <div class="container"></div>
+
     <script type="module" src="./js/main.js"></script>
     <script type="module" src="./js/dom.js"></script>
 

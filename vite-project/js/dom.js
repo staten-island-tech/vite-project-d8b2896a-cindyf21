@@ -1,41 +1,39 @@
 import "../css/style.css";
+import { menu } from "./menu"
 
 const DOMSelectors = {
   output: document.getElementById("output"),
   theme: document.getElementById("theme"),
-  fullmenu: document.getElementById("fullMenu"),
   girlgroup: document.getElementById("girlgroup"),
   boygroup: document.getElementById("boygroup"),
   thirdgen: document.getElementById("thirdgen"),
   fourthgen: document.getElementById("fourthgen"),
 };
 
-/*
 function initial() {
   menu.forEach((item) => {
-    DomSelectors.output.insertAdjacentHTML(
+    DOMSelectors.output.insertAdjacentHTML(
       "beforeend",
-      `<div class="menu-card" id="${item.group}">
-      <h5 class="memu-item">${item.group}</h5>
-      <img class="img" src=${item.img} alt="" class="menu-img">
-      <h5 class="item-price">$${item.price}</h5>
-      <button class="btn" id="addtocart"> Add To Cart </button>
-      </div>`
+      `<div class="gallery"> 
+        <h2 class="cardname"> ${item.group} </h2>  
+        <img class="image" src="${item.img}" alt=""></img> 
+        <h3 class="price"> ${item.price} </h3> 
+        </div>`
     );
   });
 }
 
 function girlgroup() {
-  menu.filter((girlgroup) => girlgroup.bg.includes("Girl Group"))
-  menu.forEach((girlgroup) => {
-    DomSelectors.output.insertAdjacentHTML(
+  menu
+  .filter((girlgroup) => girlgroup.bg.includes("Girl Group"))
+  .forEach((girlgroup) => {
+    DOMSelectors.output.insertAdjacentHTML(
       "beforeend",
-      `<div class="menu-card" id="${girlgroup.group}">
-      <h5 class="menu-item">${girlgroup.group}</h5>
-      <img class="img" src=${girlgroup.img} alt="" class="menu-img">
-      <h5 class="item-price">$${girlgroup.price}</h5>
-      <button class="btn" id="addtocart"> Add To Cart </button>
-      </div>`
+      `<div class="gallery"> 
+        <h2 class="cardname"> ${girlgroup.group} </h2>  
+        <img class="image" src="${girlgroup.img}" alt=""></img> 
+        <h3 class="price"> ${girlgroup.price} </h3> 
+        </div>`
     );
   });
 }
@@ -43,14 +41,13 @@ function girlgroup() {
 function boygroup() {
   menu.filter((boygroup) => boygroup.bg.includes("Boy Group"))
   menu.forEach((boygroup) => {
-    DomSelectors.output.insertAdjacentHTML(
+    DOMSelectors.output.insertAdjacentHTML(
       "beforeend",
-      `<div class="menu-card" id="${boygroup.group}">
-      <h5 class="menu-item">${boygroup.group}</h5>
-      <img class="img" src=${boygroup.img} alt="" class="menu-img">
-      <h5 class="item-price">$${boygroup.price}</h5>
-      <button class="btn" id="addtocart"> Add To Cart </button>
-      </div>`
+      `<div class="gallery"> 
+        <h2 class="cardname"> ${boygroup.group} </h2>  
+        <img class="image" src="${boygroup.img}" alt=""></img> 
+        <h3 class="price"> ${boygroup.price} </h3> 
+        </div>`
     );
   });
 }
@@ -58,14 +55,13 @@ function boygroup() {
 function thirdgen() {
   menu.filter((thirdgen) => thirdgen.gen.includes("3rd Generation"))
   menu.forEach((thirdgen) => {
-    DomSelectors.output.insertAdjacentHTML(
+    DOMSelectors.output.insertAdjacentHTML(
       "beforeend",
-      `<div class="menu-card" id="${thirdgen.group}">
-      <h5 class="menu-item">${thirdgen.group}</h5>
-      <img class="img" src=${thirdgen.img} alt="" class="menu-img">
-      <h5 class="item-price">$${thirdgen.price}</h5>
-      <button class="btn" id="addtocart"> Add To Cart </button>
-      </div>`
+      `<div class="gallery"> 
+        <h2 class="cardname"> ${thirdgen.group} </h2>  
+        <img class="image" src="${thirdgen.img}" alt=""></img> 
+        <h3 class="price"> ${thirdgen.price} </h3> 
+        </div>`
     );
   });
 }
@@ -73,25 +69,24 @@ function thirdgen() {
 function fourthgen() {
   menu.filter((fourthgen) => fourthgen.gen.includes("4th Generation"))
   menu.forEach((fourthgen) => {
-    DomSelectors.output.insertAdjacentHTML(
+    DOMSelectors.output.insertAdjacentHTML(
       "beforeend",
-      `<div class="menu-card" id="${fourthgen.group}">
-      <h5 class="menu-item">${fourthgen.group}</h5>
-      <img class="img" src=${fourthgen.img} alt="" class="menu-img">
-      <h5 class="item-price">$${fourthgen.price}</h5>
-      <button class="btn" id="addtocart"> Add To Cart </button>
-      </div>`
+      `<div class="gallery"> 
+        <h2 class="cardname"> ${fourthgen.group} </h2>  
+        <img class="image" src="${fourthgen.img}" alt=""></img> 
+        <h3 class="price"> ${fourthgen.price} </h3> 
+        </div>`
     );
   });
 }
 
 function clear() {
-  DomSelectors.output.innerHTML = "";
+  DOMSelectors.output.innerHTML = "";
 }
 
 initial();
 
-document.getElementById("fullMenu").addEventListener("click", function() {
+document.getElementById("reset").addEventListener("click", function() {
   clear();
   initial();
 });
@@ -115,7 +110,6 @@ document.getElementById("fourthgen").addEventListener("click", function() {
   clear();
   fourthgen();
 });
-*/
 
 
 /*
@@ -128,5 +122,4 @@ DOMSelectors.girlgroup.addEventListener("click", function (event) {
 function girlgroup() {
   const girl = kpop.filter((el) => el.bg.includes("Girl Group"))
   console.log(girl)
-};
-*/
+}; */

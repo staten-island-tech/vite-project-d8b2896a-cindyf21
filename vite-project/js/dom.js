@@ -1,5 +1,5 @@
 import "../css/style.css";
-import { menu } from "./menu"
+import {menu} from "./menu"
 
 const DOMSelectors = {
   output: document.getElementById("output"),

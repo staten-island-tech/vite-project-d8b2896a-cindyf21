@@ -10,6 +10,8 @@ const DOMSelectors = {
   fourthgen: document.getElementById("fourthgen"),
 };
 
+export {DOMSelectors};
+
 function initial() {
   menu.forEach((item) => {
     DOMSelectors.output.insertAdjacentHTML(
@@ -24,8 +26,7 @@ function initial() {
 }
 
 function girlgroup() {
-  menu
-  .filter((girlgroup) => girlgroup.bg.includes("Girl Group"))
+  menu.filter((girlgroup) => girlgroup.bg.includes("Girl"))
   .forEach((girlgroup) => {
     DOMSelectors.output.insertAdjacentHTML(
       "beforeend",
@@ -39,8 +40,8 @@ function girlgroup() {
 }
 
 function boygroup() {
-  menu.filter((boygroup) => boygroup.bg.includes("Boy Group"))
-  menu.forEach((boygroup) => {
+  menu.filter((boygroup) => boygroup.bg.includes("Boy"))
+  .forEach((boygroup) => {
     DOMSelectors.output.insertAdjacentHTML(
       "beforeend",
       `<div class="gallery"> 
@@ -53,8 +54,8 @@ function boygroup() {
 }
 
 function thirdgen() {
-  menu.filter((thirdgen) => thirdgen.gen.includes("3rd Generation"))
-  menu.forEach((thirdgen) => {
+  menu.filter((thirdgen) => thirdgen.gen.includes("3rd"))
+  .forEach((thirdgen) => {
     DOMSelectors.output.insertAdjacentHTML(
       "beforeend",
       `<div class="gallery"> 
@@ -67,8 +68,8 @@ function thirdgen() {
 }
 
 function fourthgen() {
-  menu.filter((fourthgen) => fourthgen.gen.includes("4th Generation"))
-  menu.forEach((fourthgen) => {
+  menu.filter((fourthgen) => fourthgen.gen.includes("4th"))
+  .forEach((fourthgen) => {
     DOMSelectors.output.insertAdjacentHTML(
       "beforeend",
       `<div class="gallery"> 

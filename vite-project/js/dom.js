@@ -112,15 +112,3 @@ document.getElementById("fourthgen").addEventListener("click", function() {
   fourthgen();
 });
 
-
-/*
-DOMSelectors.girlgroup.addEventListener("click", function (event) {
-  clearfields();
-  const girl = kpop.filter((el) => el.bg.includes("Girl Group"))
-  girlgroup(girl);
-});
-
-function girlgroup() {
-  const girl = kpop.filter((el) => el.bg.includes("Girl Group"))
-  console.log(girl)
-}; */

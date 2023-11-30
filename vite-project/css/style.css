@@ -63,17 +63,17 @@ img {
 
 
 :root {
-  --blue:#798a99;
-  --blue2: rgba(255, 255, 255, 0.551);
-  --orange: #ff9a9a;
-  --primary: var(--orange);
+  --gray:#798a99;
+  --gray2: rgba(255, 255, 255, 0.551);
+  --pink: #ff9a9a;
+  --primary: var(--pink);
   --h1: 5rem;
 }
 .light {
-  --primary: var(--blue);
+  --primary: var(--gray);
 }
 .dark {
-  --primary: var(--orange);
+  --primary: var(--pink);
 }
 body {
   background-color: var(--primary);
@@ -85,5 +85,5 @@ h1 {
   font-size: var(--h1);
 }
 .gallery{
-  background-color: var(--blue2);
+  background-color: var(--gray2);
 }

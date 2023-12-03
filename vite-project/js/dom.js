@@ -25,6 +25,12 @@ function initial() {
   });
 }
 
+initial();
+
+function clear() {
+  DOMSelectors.output.innerHTML = "";
+}
+
 function girlgroup() {
   menu.filter((girlgroup) => girlgroup.bg.includes("Girl"))
   .forEach((girlgroup) => {
@@ -81,12 +87,6 @@ function fourthgen() {
   });
 }
 
-function clear() {
-  DOMSelectors.output.innerHTML = "";
-}
-
-initial();
-
 document.getElementById("reset").addEventListener("click", function() {
   clear();
   initial();
@@ -112,3 +112,14 @@ document.getElementById("fourthgen").addEventListener("click", function() {
   fourthgen();
 });
 
+
+
+
+// let buttons = document.querySelectorAll('button')
+// buttons.forEach((btn => btn.addEventListener("click", function() {
+//     let type = btn.textContent()
+//     let newArr = category.filter((category) => category.category === type)
+//     clearFields()
+//     insertCards(newArr)
+// }
+// )))

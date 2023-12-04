@@ -116,46 +116,38 @@ document.getElementById("fourthgen").addEventListener("click", function() {
 
 
 
-
+// function clear() {
+//   const container = DOMSelectors.container;
+//   container.innerHTML = '';
+// }
 
 // function initial(arr) {
-//     arr.forEach((item) => {
-//       DOMSelectors.output.insertAdjacentHTML(
-//         "beforeend",
-//         `<div class="gallery"> 
-//           <h2 class="cardname"> ${item.group} </h2>  
-//           <img class="image" src="${item.img}" alt=""></img> 
-//           <h3 class="price"> ${item.price} </h3> 
-//           </div>`
-//       );
-//     });
+//   arr.forEach((item) => {
+//     DOMSelectors.output.insertAdjacentHTML(
+//       "beforeend",
+//       `<div class="gallery"> 
+//         <h2 class="cardname"> ${item.group} </h2>  
+//         <img class="image" src="${item.img}" alt=""></img> 
+//         <h3 class="price"> ${item.price} </h3> 
+//         </div>`
+//     );
+//   });
 // }
-  
+
 // initial(menu);
 
-// DOMSelectors.filters.forEach((btn) => btn.addEventListener("click", function () {
-//     let arrays = btn.textContent;
-//     let newArr = menu.filter((menu) => fooditem.bg === arrays);
-//     initial(newArr);
-// }));
-
-
 // let buttons = document.querySelectorAll(".button")
-// buttons.forEach((button) => button.addEventListener("click", function() {
-//     let bg = button.textContent
-//     let arr = menu.filter((items) => items.bg.includes(bg));
-//     clear();
-//     initial(arr);
+// buttons.forEach((buttons) => buttons.addEventListener("click", function() {
+//   let content = buttons.textContent
+//   let array = menu.filter((el) => el.type.includes(content))
+//   clear()
+//   initial(array)
 // }));
 
+// DOMSelectors.form.addEventListener("submit", function(event) {
+//   event.preventDefault();
+// });
 
-// function filters() {
-//  DOMSelectors.button.forEach((button) => button.addEventListener("click", function () {
-//     let category = button.textContent.toLowerCase()
-//     let newArr = menu.filter((menu) => menu.type.includes(category))
-//     DOMSelectors.output.innerHTML = ""
-//     initial(newArr);
-//   }))
-// }
-// filters();
+
+
  

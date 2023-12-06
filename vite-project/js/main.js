@@ -121,20 +121,6 @@ document.getElementById("fourthgen").addEventListener("click", function() {
 //   container.innerHTML = '';
 // }
 
-// function initial(arr) {
-//   arr.forEach((item) => {
-//     DOMSelectors.output.insertAdjacentHTML(
-//       "beforeend",
-//       `<div class="gallery"> 
-//         <h2 class="cardname"> ${item.group} </h2>  
-//         <img class="image" src="${item.img}" alt=""></img> 
-//         <h3 class="price"> ${item.price} </h3> 
-//         </div>`
-//     );
-//   });
-// }
-
-// initial(menu);
 
 // let buttons = document.querySelectorAll(".button")
 // buttons.forEach((buttons) => buttons.addEventListener("click", function() {

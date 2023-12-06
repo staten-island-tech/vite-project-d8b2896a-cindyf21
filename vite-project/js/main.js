@@ -62,7 +62,7 @@ function thirdgen() {
   .forEach((thirdgen) => {
     DOMSelectors.output.insertAdjacentHTML(
       "beforeend",
-      `<div class="gallery"> 
+     `<div class="gallery"> 
         <h2 class="cardname"> ${thirdgen.group} </h2>  
         <img class="image" src="${thirdgen.img}" alt=""></img> 
         <h3 class="price"> ${thirdgen.price} </h3> 
@@ -113,7 +113,7 @@ document.getElementById("fourthgen").addEventListener("click", function() {
   clear();
   fourthgen();
 });
-
+ 
 
 
 // function clear() {
@@ -129,6 +129,7 @@ document.getElementById("fourthgen").addEventListener("click", function() {
 //   clear()
 //   initial(array)
 // }));
+
 
 // DOMSelectors.form.addEventListener("submit", function(event) {
 //   event.preventDefault();
